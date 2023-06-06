@@ -61,9 +61,10 @@ function App() {
     try {
       const response = await axios.request(options);
       const xml = response.data;
+      console.log(xml)
       const convertXML = require("simple-xml-to-json").convertXML;
       const json = convertXML(xml);
-      //console.log(json)
+      console.log(json)
       const dataJSON = json['soap:Envelope'].children[0]['soap:Body'].children[0]['m:ListOfLanguagesByNameResponse'].children[0]['m:ListOfLanguagesByNameResult'].children
       console.log(dataJSON);
       setContainer2(dataJSON)
@@ -180,8 +181,8 @@ return (
           aria-label='simple tabs example'
           style={{ backgroundColor: '#14065f' }}
         >
-          <Tab label='Grid1' value='1' />
-          <Tab label='Grid2' value='2' />                
+          <Tab label='REST' value='1' />
+          <Tab label='SOAP' value='2' />                
         </TabList>
       </AppBar>
       <TabPanel value='1'>
