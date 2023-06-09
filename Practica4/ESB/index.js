@@ -19,7 +19,11 @@ app.get('/getorderESB', function(req,res){
     res.send({'id':num})
 })
 
-
+app.post('/logESB', body_parser, function(req,res){
+    var descrip = req.body.descripcion;
+    axios.post('http://localhost:3003/log',{'descripcion':descrip})
+    res.send("OK")
+})
 
 
 app.listen(PORT, () => {
