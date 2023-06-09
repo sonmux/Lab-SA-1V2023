@@ -25,6 +25,17 @@ app.post('/logESB', body_parser, function(req,res){
     res.send("OK")
 })
 
+app.get('/getstateorderESB/:id', body_parser, function(req,res){
+    var order = req.params.id
+    var descripcion = "Se desea saber el estado de orden en el restaurante: "+order 
+    axios.post('http://localhost:3003/log',{'descripcion':descripcion})
+    axios.get('http://localhost:3001/getStateRestaurant/'+order)
+        .then((response)=>{
+            res.send(response.data)
+        })
+        //res.json(order)
+})
+
 
 app.listen(PORT, () => {
     console.log('Servidor ESB en puerto '+PORT)
