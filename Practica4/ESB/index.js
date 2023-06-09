@@ -59,6 +59,15 @@ app.get('/getstateorderRepartidorESB/:id', body_parser, function(req,res){
         //res.json(order)
 })
 
+//------ ESBS
+app.get('/ordenEntregadaESB/:id', body_parser, function(req,res){
+    var order = req.params.id
+    axios.get('http://localhost:3002/ordenEntregada/'+order)
+        .then((response)=>{
+            res.json(response.data)
+        })
+        //res.json(order)
+})
 
 app.listen(PORT, () => {
     console.log('Servidor ESB en puerto '+PORT)
