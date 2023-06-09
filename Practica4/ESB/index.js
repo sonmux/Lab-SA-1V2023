@@ -48,6 +48,17 @@ app.get('/avisarRepartidorESB/:id', body_parser, function(req,res){
         })
 })
 
+app.get('/getstateorderRepartidorESB/:id', body_parser, function(req,res){
+    var order = req.params.id
+    var descripcion = "Se desea saber el estado de orden del repartidor: "+order 
+    axios.post('http://localhost:3003/log',{'descripcion':descripcion})
+    axios.get('http://localhost:3002/getStateRepartidor/'+order)
+        .then((response)=>{
+            res.send(response.data)
+        })
+        //res.json(order)
+})
+
 
 app.listen(PORT, () => {
     console.log('Servidor ESB en puerto '+PORT)
