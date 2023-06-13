@@ -1,13 +1,13 @@
-registro Thu Jun 08 2023 01:50:24 GMT-0600 (hora estándar central): se creo una orden con id: 789
-registro Thu Jun 08 2023 01:50:24 GMT-0600 (hora estándar central): se recibio el pedido: 789
-registro Thu Jun 08 2023 01:51:01 GMT-0600 (hora estándar central): Se desea saber el estado de orden en el restaurante: 789
-registro Thu Jun 08 2023 01:51:01 GMT-0600 (hora estándar central): Usuario desea saber el estado de su pedido en el restaurante, orden con id: 789
-registro Thu Jun 08 2023 01:51:22 GMT-0600 (hora estándar central): Restaurante avisa al repartidor de orden lista, orden: 789
-registro Thu Jun 08 2023 01:51:22 GMT-0600 (hora estándar central): Repartidor recibe orden: 789
-registro Thu Jun 08 2023 01:51:29 GMT-0600 (hora estándar central): Se desea saber el estado de orden en el restaurante: 789
-registro Thu Jun 08 2023 01:51:29 GMT-0600 (hora estándar central): Usuario desea saber el estado de su pedido en el restaurante, orden con id: 789
-registro Thu Jun 08 2023 01:51:50 GMT-0600 (hora estándar central): Se desea saber el estado de orden del repartidor: 789
-registro Thu Jun 08 2023 01:51:50 GMT-0600 (hora estándar central): Usuario desea saber el estado de su pedido por el repartidor, orden con id: 789
-registro Thu Jun 08 2023 01:53:03 GMT-0600 (hora estándar central): Repartidor entrego orden: 789
-registro Thu Jun 08 2023 01:53:44 GMT-0600 (hora estándar central): Se desea saber el estado de orden del repartidor: 789
-registro Thu Jun 08 2023 01:53:44 GMT-0600 (hora estándar central): Usuario desea saber el estado de su pedido por el repartidor, orden con id: 789
+registro Thu Jun 08 2023 22:59:41 GMT-0600 (hora estándar central): se creo una orden con id: 847
+registro Thu Jun 08 2023 22:59:41 GMT-0600 (hora estándar central): se recibio el pedido: 847
+registro Thu Jun 08 2023 22:59:52 GMT-0600 (hora estándar central): Se desea saber el estado de orden en el restaurante: 847
+registro Thu Jun 08 2023 22:59:52 GMT-0600 (hora estándar central): Usuario desea saber el estado de su pedido en el restaurante, orden con id: 847
+registro Thu Jun 08 2023 23:00:09 GMT-0600 (hora estándar central): Restaurante avisa al repartidor de orden lista, orden: 847
+registro Thu Jun 08 2023 23:00:09 GMT-0600 (hora estándar central): Repartidor recibe orden: 847
+registro Thu Jun 08 2023 23:00:22 GMT-0600 (hora estándar central): Se desea saber el estado de orden en el restaurante: 847
+registro Thu Jun 08 2023 23:00:22 GMT-0600 (hora estándar central): Usuario desea saber el estado de su pedido en el restaurante, orden con id: 847
+registro Thu Jun 08 2023 23:00:35 GMT-0600 (hora estándar central): Se desea saber el estado de orden del repartidor: 847
+registro Thu Jun 08 2023 23:00:35 GMT-0600 (hora estándar central): Usuario desea saber el estado de su pedido por el repartidor, orden con id: 847
+registro Thu Jun 08 2023 23:00:47 GMT-0600 (hora estándar central): Repartidor entrego orden: 847
+registro Thu Jun 08 2023 23:00:57 GMT-0600 (hora estándar central): Se desea saber el estado de orden del repartidor: 847
+registro Thu Jun 08 2023 23:00:57 GMT-0600 (hora estándar central): Usuario desea saber el estado de su pedido por el repartidor, orden con id: 847

@@ -30,7 +30,8 @@ app.post('/postorder', body_parser, function(req,res){
 app.get('/getStateRestaurant/:id', body_parser, function(req,res){
     var id = req.params.id
     var descripcion = "Usuario desea saber el estado de su pedido en el restaurante, orden con id: "+id
-    axios.post('http://localhost:3003/log',{'descripcion':descripcion})
+    //axios.post('http://localhost:3003/log',{'descripcion':descripcion})
+    axios.post('http://localhost:3004/logESB',{'descripcion':descripcion})
     
     console.log(JSONordenes[id])
     const respuesta = {

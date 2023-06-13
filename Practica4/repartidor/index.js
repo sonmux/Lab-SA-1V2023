@@ -20,7 +20,8 @@ app.post('/recibirPedidoRepartidor', body_parser, function(req,res){
     JSONordenesRepartidor[nuevaOrden]=estadoOrden[random]
 
     var descripcion = "Repartidor recibe orden: "+nuevaOrden
-    axios.post('http://localhost:3003/log',{'descripcion':descripcion})
+    //axios.post('http://localhost:3003/log',{'descripcion':descripcion})
+    axios.post('http://localhost:3004/logESB',{'descripcion':descripcion})
     console.log(JSONordenesRepartidor)
     const respuesta = {
         data:"orden "+nuevaOrden+" recibida por el repartidor"
@@ -31,7 +32,8 @@ app.post('/recibirPedidoRepartidor', body_parser, function(req,res){
 app.get('/getStateRepartidor/:id', body_parser, function(req,res){
     var id = req.params.id
     var descripcion = "Usuario desea saber el estado de su pedido por el repartidor, orden con id: "+id
-    axios.post('http://localhost:3003/log',{'descripcion':descripcion})
+    //axios.post('http://localhost:3003/log',{'descripcion':descripcion})
+    axios.post('http://localhost:3004/logESB',{'descripcion':descripcion})
     
     console.log(JSONordenesRepartidor[id])
     const respuesta = {
@@ -43,7 +45,8 @@ app.get('/getStateRepartidor/:id', body_parser, function(req,res){
 app.get('/ordenEntregada/:id', body_parser, function(req,res){
     var id = req.params.id
     var descripcion = "Repartidor entrego orden: "+id
-    axios.post('http://localhost:3003/log',{'descripcion':descripcion})
+    //axios.post('http://localhost:3003/log',{'descripcion':descripcion})
+    axios.post('http://localhost:3004/logESB',{'descripcion':descripcion})
     JSONordenesRepartidor[id]="Entregada"
     res.send({data: "Orden "+id+" entregada"})
 })
